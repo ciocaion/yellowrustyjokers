@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="javascript.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+    <title>Rusty Yellow Jokers</title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+    <ul>
+    <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Merch</a></li>
+            <div class="sm">
+            <li><a href="https://www.facebook.com/Rusty-Yellow-Jokers-158608598241587"><img src="images/facebook.png" width="25px" height="25px"></a></li>
+            <li><a href="https://www.instagram.com/rustyyellowjokerscph/"><img src="images/instagram.png" width="25px" height="25px"></a></li>
+            <li><a href="https://open.spotify.com/artist/4vHg3lfR2tW8kRddi1fxjY?si=NUFT-22SQr-XVJEpB2uNzQ"><img src="images/spotify.png" width="25px" height="25px"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCwTGH7nFkNOUy3BFX9KKRSQ/"><img src="images/youtube.png" width="25px" height="25px"></a></li>
+            </div>
+        </ul>
+    </nav>
+    <hero class="hero ">
+        <video src="images/neon.mp4" playsinline autoplay muted loop></video>
+        
+        <div class="text">
+            <h2>Welcome to</br> RUSTY YELLOW JOKERS</h2>
+            <a href="index.html#cov">Explore</a>
+        </div>
+
+    <ul class="social">
+        <li><a href="https://www.facebook.com/Rusty-Yellow-Jokers-158608598241587"><img src="images/facebook.png" width="50px" height="50px"></a></li>
+        <li><a href="https://www.instagram.com/rustyyellowjokerscph/"><img src="images/instagram.png"width="50px" height="50px"></a></li>
+        <li><a href="https://open.spotify.com/artist/4vHg3lfR2tW8kRddi1fxjY?si=NUFT-22SQr-XVJEpB2uNzQ"><img src="images/spotify.png"width="50px" height="50px"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCwTGH7nFkNOUy3BFX9KKRSQ/"><img src="images/youtube.png"width="50px" height="50px"></a></li>
+
+    </ul>
+    </hero>
+    <section>
+        <div class="banner">
+            <div class="content" id="cov">
+                <img  class="cover" src="images/cover.png">
+                <h2>Check our latest release!</h2>
+                <a href="#" onclick="toggle();">Hill Side Willie - Music Video</a>
+
+            </div>
+        </div>
+        <div class="trailer">
+            <video id="video" src="images/b.mp4" controls="true" ></video>
+            <img class="cancel"  src="images/cancel.png" onclick="toggle();">
+        </div>
+    </section>
+    <script src="./javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    var tl = gsap.timeline();
+    tl.from('nav', {
+        y: '-6%',
+        opacity: 0,
+        duration: 1,
+        ease: Power2.easeIn
+    })
+    tl.from('.text', {
+        y: '-5%',
+        opacity: 0,
+        duration: 1,
+        ease: Power2.easeIn
+    })
+    tl.from('.social', {
+        y: '-5%',
+        opacity: 0,
+        duration: 1,
+        ease: Power1.easeIn
+    })
+function toggle(){
+    var trailer= document.querySelector(".trailer")
+    var video= document.getElementById("video")
+    trailer.classList.toggle("active");
+    video.pause();
+    video.currentTime = 0;
+}
+
+    </script>
+</body>
+</html>

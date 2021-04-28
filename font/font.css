@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Clip';
+  src: url('Clip.eot');
+  src: url('Clip.eot?#iefix') format('embedded-opentype'),
+       url('Clip.svg#Clip') format('svg'),
+       url('Clip.ttf') format('truetype'),
+       url('Clip.woff') format('woff'),
+       url('Clip.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
