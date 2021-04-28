@@ -190,6 +190,7 @@ nav ul li a{
 }
 
 .text a{
+    position: relative;
     display: inline-block;
     font-size: 1em;
     background: white;
@@ -204,6 +205,7 @@ nav ul li a{
 .text a:hover{
     letter-spacing: 6px;
     background: #fb8209;
+    
 }
 .social {
     position: absolute;
@@ -299,80 +301,6 @@ nav ul li a{
     max-width: 32px;
 }
 
-footer {
-    position: relative;
-    padding: 10px 0px;
-    background: #444444;
-    z-index: 1;
-}
-
-.logof img{
-    display: flex;
-    position: relative;
-    width: 290px;
-    height: 250px;
-    margin-top: 10px;
-    margin-right: 70px;
-}
-.footer-col {
-    width: 25%;
-    padding: 0 15px;
-    margin-top: 50px;
-}
-.footer-col h4 {
-    font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    font-weight: bold;
-    position: relative;
-}
-
-.footer-col h4::before{
-    content: '' ;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #efead9;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-
-}
-
-.footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-.footer-col ul li a{
-    font-size: 16;
-    text-decoration: none;
-    list-style: none;
-    color: #fff;
-    font-weight: bold;
-    display: block;
-}
-
-.footer-col p{
-    font-size: 14px;
-    text-decoration: none;
-    list-style: none;
-    color: rgb(190, 190, 190);
-    font-weight: bold;
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container{
-    max-width: 1170px;
-    margin: auto;
-}
-
-
-
 
 @media(max-width: 798px) {
     .hero, .hero header{
@@ -383,17 +311,22 @@ footer {
         margin-top: -30px;
     }
     nav ul{
-        width: 320px;
+        width:320px;
         clip-path: circle(15% at 97% 1%);
+        height: 72.5vh;
+
 
     }
     nav ul li{
         font-size: 14px;
-        padding: 10px 14px;
+        padding: 10px 1p4x;
 
     }
+    nav ul li a{
+        font-size: 14px;
+    }
     nav ul .menu span{
-        right: -230px;
+        right: -240px;
     }
     nav ul.active .menu span:nth-child(1){
         top: 0px;
@@ -408,12 +341,16 @@ footer {
     }
     
     .sm {
-        padding-left:80px ;
-        margin-top: 1rem;
+        margin-right: -90px;
+        padding-bottom: 20px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-    
+    }
+    .sm img{
+        width: 15px;
+        height: 15px;
+
     }
     
     .text h2{
