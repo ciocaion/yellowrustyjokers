@@ -350,7 +350,8 @@ nav ul li a{
     }
     
     .sm {
-        margin-right: -80px;
+        margin-left:130px;
+        margin-bottom: 10px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
