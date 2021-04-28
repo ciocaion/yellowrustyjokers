@@ -48,6 +48,7 @@ nav{
 }
 nav:hover{
     transition: ease-in-out .2s;
+    outline: none;
 }
 
 nav ul{
@@ -63,6 +64,7 @@ nav ul{
 nav ul.active{
     transition: ease-in-out .2s;
     clip-path: circle(55% at 100% 10%);
+    outline: none;
 }
 
 nav ul .menu{
@@ -71,6 +73,7 @@ nav ul .menu{
     position: relative;
     margin-bottom: 24px;
     margin-left: 24px;
+    outline: none;
 }
 
 nav ul .menu span{
