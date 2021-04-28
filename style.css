@@ -312,20 +312,20 @@ nav ul li a{
     }
     nav ul{
         width:320px;
-        clip-path: circle(15% at 97% 1%);
-        height: 72.5vh;
-
+        clip-path: circle(15% at 100% 1%);
+        height: 73vh;
 
     }
     nav ul li{
-        font-size: 14px;
-        padding: 10px 1p4x;
+        padding: 10px 14px;
 
     }
     nav ul li a{
-        font-size: 14px;
+        padding: 1px ;
+        font-size: 10px;
     }
     nav ul .menu span{
+        margin-top: -10px;
         right: -240px;
     }
     nav ul.active .menu span:nth-child(1){
@@ -339,10 +339,13 @@ nav ul li a{
         width: 40px;
         left: 227px;
     }
+    nav .menu span:nth-child(3){
+        bottom: 12px;
+        width: 40px;
+    }
     
     .sm {
-        margin-right: -90px;
-        padding-bottom: 20px;
+        margin-right: -80px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -350,6 +353,7 @@ nav ul li a{
     .sm img{
         width: 15px;
         height: 15px;
+        margin-bottom:0px;
 
     }
     
